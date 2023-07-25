@@ -1,0 +1,76 @@
+﻿@model IEnumerable<eStore.Models.Models.Member>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Member List</h1>
+
+<div class="row">
+    <div class="col-3">
+        <a class="btn btn-success mb-2" asp-action="Create">Create New</a>
+    </div>
+    <div class="col-9 text-end row">
+        <div class="col-6"></div>
+        <div class="col-6">
+            <form class="d-flex" asp-action="SearchMembers">
+                <input class="form-control me-sm-2" type="search" placeholder="Search members" name="keyword">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th colspan="3">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MemberId" class="btn btn-secondary">Edit</a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.MemberId" class="btn btn-info">Details</a>
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.MemberId" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

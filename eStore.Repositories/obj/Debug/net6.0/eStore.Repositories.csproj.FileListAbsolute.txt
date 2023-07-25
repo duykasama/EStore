@@ -1,0 +1,15 @@
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\bin\Debug\net6.0\eStore.Repositories.deps.json
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\bin\Debug\net6.0\eStore.Repositories.dll
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\bin\Debug\net6.0\eStore.Repositories.pdb
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.csproj.AssemblyReference.cache
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.AssemblyInfoInputs.cache
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.AssemblyInfo.cs
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.csproj.CoreCompileInputs.cache
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.dll
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\refint\eStore.Repositories.dll
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.pdb
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\ref\eStore.Repositories.dll
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\bin\Debug\net6.0\eStore.Models.dll
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\bin\Debug\net6.0\eStore.Models.pdb
+D:\.Programming\C#\Projects\Ass3Solution_DuyNTSE173204\eStore.Repositories\obj\Debug\net6.0\eStore.Repositories.csproj.CopyComplete

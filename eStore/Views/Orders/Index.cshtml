@@ -1,0 +1,77 @@
+﻿@model IEnumerable<eStore.Models.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Order List</h1>
+
+<div class="row">
+    <div class="col-3">
+        <a class="btn btn-success mb-2" asp-action="Create">Create New</a>
+    </div>
+    <div class="col-9 text-end row">
+        <div class="col-6"></div>
+        <div class="col-6">
+            <form class="d-flex" asp-action="SearchOrders">
+                <input class="form-control me-sm-2" type="search" placeholder="Search orders" name="keyword">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequiredDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShippedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Freight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member)
+            </th>
+            <th colspan="3">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequiredDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShippedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Freight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Member.Email)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.OrderId" class="btn btn-secondary">Edit</a>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.OrderId" class="btn btn-info">Details</a>
+                </td>
+                <td>
+                     <a asp-action="Delete" asp-route-id="@item.OrderId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
